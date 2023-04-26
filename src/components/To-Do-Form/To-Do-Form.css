@@ -1,0 +1,25 @@
+@layer {
+    .box-shadow-1{
+        box-shadow: 0px 0px 6px 1px black;
+    }
+}
+
+.form {
+    @apply flex p-3 w-96 bg-nevy-blue box-shadow-1 rounded-md text-white -translate-y-40 items-center;
+}
+
+.task-input {
+    @apply bg-transparent w-72 outline-none text-2xl;
+}
+
+.status-btn,.submit-btn {
+    @apply h-7 w-7 block rounded-full border-x border-y border-solid border-slate-600;
+}
+
+.status-btn {
+    @apply mr-4 ;
+}
+
+.hide {
+    @apply hidden;
+}

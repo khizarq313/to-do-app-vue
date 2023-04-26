@@ -1,0 +1,23 @@
+.Header {
+    @apply h-2/5 w-full bg-cover bg-center bg-no-repeat flex items-start justify-around p-4;
+}
+
+.dark-head {
+    @apply bg-desktop-dark-bg max-lg:bg-mobile-dark-bg;
+}
+
+.light-head {
+    @apply bg-desktop-light-bg max-lg:bg-mobile-light-bg;
+}
+
+.heading {
+    @apply text-6xl  text-white;
+}
+
+.material-symbols-rounded {
+    @apply text-white text-3xl
+}
+
+.heading,.material-symbols-rounded {
+    @apply translate-y-28 sm:translate-y-20
+}

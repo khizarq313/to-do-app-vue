@@ -1,0 +1,55 @@
+@layer {
+    .max-h-50p {
+        max-height: 50%
+    }
+    ul::-webkit-scrollbar {
+        width: 2px;
+    }
+    ul::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 4px transparent;
+    } 
+    ul::-webkit-scrollbar-thumb {
+        background-color: gray;
+        outline: solid 1px gray;
+        border-radius: 1rem;
+    }
+    .box-shadow-1{
+        box-shadow: 0px 0px 8px 2px black;
+    }
+}
+
+.list-container {
+    @apply w-96 bg-nevy-blue text-2xl max-h-50p overflow-hidden rounded-md text-white box-shadow-1 -translate-y-20 border-inherit;
+}
+
+.lists {
+    @apply flex flex-col items-center border-inherit max-h-80 overflow-y-auto scroll-smooth scroll-m-px;
+}
+
+.list {
+    @apply flex w-full items-center border-b-2 border-inherit border-solid p-3;
+}
+
+.task {
+    @apply w-72 break-words;
+}
+
+.highlighted {
+    @apply line-through opacity-80;
+}
+
+.status-btn,.delete-btn {
+    @apply h-7 w-7 block rounded-full border-x border-y border-solid border-slate-600;
+}
+
+.hint-text  {
+    @apply w-full text-center border-b-2 border-inherit border-solid p-2 pt-3;
+}
+
+.panel-buttons {
+    @apply flex justify-around p-2;
+}
+
+.active-panel {
+    @apply text-sky-blue;
+}

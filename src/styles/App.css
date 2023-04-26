@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Glacial Indifference";
+    src: url("src/assets/fonts/GlacialIndifference-Regular.otf");
+}
+
+body, body * {
+    font-family: 'Glacial Indifference', sans-serif;
+}
+
+body {
+    @apply bg-black text-white;
+}
+
+svg,span {
+    @apply hover:opacity-70;
+}
+
+@media screen and (max-width:550px) {
+    html {
+        font-size: 85%;
+    }
+}

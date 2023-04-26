@@ -1,0 +1,11 @@
+.wrapper {
+    @apply h-screen w-screen flex flex-col items-center; 
+}
+
+.dark {
+    @apply bg-black text-white border-black;
+}
+
+.light {
+    @apply bg-white text-black border-white;
+}
