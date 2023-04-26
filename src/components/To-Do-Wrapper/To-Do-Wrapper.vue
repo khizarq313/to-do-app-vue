@@ -82,8 +82,10 @@
                 }
             },
             updateTaskStatus: function(id: string) {
-                const task: Tasktype = this.allTasks.find((task: Tasktype) => task.id === id);
-                task.status = !task.status;
+                const task: Tasktype| undefined = this.allTasks.find((task: Tasktype) => task.id === id);
+                if (task) {
+                    task.status = !task.status;                    
+                }
             },
             deleteTask: function(id: string) {
                 this.allTasks = this.allTasks.filter((task: Tasktype) => task.id !== id);

@@ -1,7 +1,7 @@
 <template>
     <div class="list-container">
         <ul class="lists">
-            <p v-if="taskList.length === 0" class="hint-text">
+            <p v-if="taskListLength" class="hint-text">
                 Please Add Some Task!
             </p>
             <li class="list" v-for="task of taskList" :key="task.id">
@@ -75,7 +75,7 @@
             }
         },
         computed: {
-            taskList: function(): Tasktype[] {
+            taskList: function(): Tasktype[]| undefined {
                 switch (this.panel) {
                     case "all":
                         return this.allTasks;
@@ -83,12 +83,14 @@
                         return this.activeTasks;
                     case "completed":
                         return this.completedTasks;
-                    default:
-                        console.log("there has been some error");
-                        break;
                 }
+            },
+            taskListLength: function(): boolean| undefined {
+            if (this.taskList) {
+                return this.taskList.length === 0;
             }
         }
+        },
     }
 
 </script>
