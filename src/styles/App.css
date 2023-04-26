@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: "Glacial Indifference";
-    src: url("src/assets/fonts/GlacialIndifference-Regular.otf");
+    src: url("@/assets/fonts/GlacialIndifference-Regular.otf");
 }
 
 body, body * {
