@@ -1,6 +1,6 @@
 # **To-Do App**
 
-This is a simple To-Do App built using Vue 3, TypeScript, and Tailwind. The app allows users to add, delete, and toggle the status of tasks, and displays all tasks, active tasks, and completed tasks on separate panels.
+This is a simple To-Do App built using Vue 3, TypeScript, and Tailwind.
 
  **The app includes the following features:**
 
