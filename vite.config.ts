@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/to-do-app/",
+  base: "/to-do-app-vue/",
   plugins: [vue()],
   resolve: {
     alias: {

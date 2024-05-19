@@ -26,3 +26,4 @@ This is a simple To-Do App built using Vue 3, TypeScript, and Tailwind.
 - `npm install` - To install project dependencies
 - `npm run dev` - To start the development server# to-do-app
 # to-do-vue
+# to-do-app-vue
